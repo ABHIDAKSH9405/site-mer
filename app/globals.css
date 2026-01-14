@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Couleurs maritimes - Variables CSS custom (obligatoire BTS SIO) */
+  --color-ocean-deep: #0A4C6D;
+  --color-ocean-medium: #1E88B5;
+  --color-ocean-light: #3FA8D3;
+  --color-foam: #F0F8FF;
+  --color-sand: #F5DEB3;
+  --color-coral: #FF6B6B;
+
+  /* Police principale */
+  --font-primary: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  /* Espacements */
+  --spacing-section: 4rem;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --spacing-section: 2rem;
+  }
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-foam);
+  color: var(--color-ocean-deep);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prévention du scroll horizontal sur mobile */
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
