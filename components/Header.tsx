@@ -48,28 +48,24 @@ export default function Header() {
             aria-label="Toggle menu"
           >
             <span
-              className={`block w-6 h-0.5 bg-foam transition-all duration-300 ${
-                isMenuOpen ? 'rotate-45 translate-y-2' : ''
-              }`}
+              className={`block w-6 h-0.5 bg-foam transition-all duration-300 ${isMenuOpen ? 'rotate-45 translate-y-2' : ''
+                }`}
             ></span>
             <span
-              className={`block w-6 h-0.5 bg-foam transition-all duration-300 ${
-                isMenuOpen ? 'opacity-0' : ''
-              }`}
+              className={`block w-6 h-0.5 bg-foam transition-all duration-300 ${isMenuOpen ? 'opacity-0' : ''
+                }`}
             ></span>
             <span
-              className={`block w-6 h-0.5 bg-foam transition-all duration-300 ${
-                isMenuOpen ? '-rotate-45 -translate-y-2' : ''
-              }`}
+              className={`block w-6 h-0.5 bg-foam transition-all duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-2' : ''
+                }`}
             ></span>
           </button>
         </div>
 
         {/* Menu Mobile */}
         <nav
-          className={`md:hidden overflow-hidden transition-all duration-300 ${
-            isMenuOpen ? 'max-h-64 pb-4' : 'max-h-0'
-          }`}
+          className={`md:hidden overflow-hidden transition-all duration-300 ${isMenuOpen ? 'max-h-64 pb-4' : 'max-h-0'
+            }`}
         >
           <ul className="flex flex-col space-y-3">
             {navLinks.map((link) => (
