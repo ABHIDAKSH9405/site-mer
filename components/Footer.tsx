@@ -36,7 +36,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/oceanprotectionfrance/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-ocean-light transition-colors"
