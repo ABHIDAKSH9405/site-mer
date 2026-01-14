@@ -60,13 +60,7 @@ export default function Home() {
     <main className="flex-1">
       {/* Hero Section */}
       <section className="relative h-[500px] md:h-[600px] overflow-hidden">
-        <Image
-          src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1920&q=80"
-          alt="Vue aérienne majestueuse des vagues de l'océan Atlantique"
-          fill
-          className="object-cover"
-          priority
-        />
+        <video src="https://www.pexels.com/fr-fr/download/video/856882/" autoPlay muted></video>
         <div className="absolute inset-0 bg-gradient-to-b from-ocean-deep/70 via-ocean-deep/50 to-ocean-deep/70 flex items-center justify-center">
           <div className="text-center text-foam px-4 max-w-4xl">
             <motion.h1
