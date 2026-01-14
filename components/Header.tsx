@@ -77,7 +77,7 @@ export default function Header() {
               whileHover={{ scale: 1.05 }}
               className="text-2xl font-bold hover:text-ocean-light transition-colors duration-300"
             >
-              Matin life
+              Marin life
             </motion.span>
           </Link>
 
