@@ -25,7 +25,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="https://twitter.com"
+              href="https://x.com/ProtecDesOceans"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-ocean-light transition-colors"
