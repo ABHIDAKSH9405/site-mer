@@ -93,12 +93,6 @@ export default function Header() {
                     }`}
                   >
                     {link.label}
-                    <motion.span
-                      className="absolute -bottom-1 left-0 h-0.5 bg-ocean-light"
-                      initial={{ width: isActive(link.href) ? '100%' : '0%' }}
-                      whileHover={{ width: '100%' }}
-                      transition={{ duration: 0.3 }}
-                    />
                   </Link>
                 </li>
               ))}
