@@ -14,7 +14,7 @@ export default function Footer() {
           {/* Liens réseaux sociaux */}
           <div className="flex space-x-6">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/AssoProtectionDesOceans/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-ocean-light transition-colors"
