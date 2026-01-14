@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import TextType from "@/components/TextType";
 
 // Animation variants
 const fadeIn = {
@@ -63,23 +64,17 @@ export default function Home() {
         <video src="https://www.pexels.com/fr-fr/download/video/856882/" autoPlay muted></video>
         <div className="absolute inset-0 bg-gradient-to-b from-ocean-deep/70 via-ocean-deep/50 to-ocean-deep/70 flex items-center justify-center">
           <div className="text-center text-foam px-4 max-w-4xl">
-            <motion.h1
-              initial="hidden"
-              animate="visible"
-              variants={fadeInUp}
-              className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 drop-shadow-lg"
-            >
-              Protégeons Nos Océans
-            </motion.h1>
-            <motion.p
-              initial="hidden"
-              animate="visible"
-              variants={fadeIn}
-              transition={{ delay: 0.3 }}
-              className="text-xl md:text-2xl lg:text-3xl max-w-3xl mx-auto leading-relaxed drop-shadow-md"
-            >
-              Ensemble pour préserver la biodiversité marine et assurer un avenir durable aux générations futures
-            </motion.p>
+            <TextType 
+              text={[
+                "Protégeons Nos Océans",
+                "Ensemble pour préserver la biodiversité marine et assurer un avenir durable aux générations futures",
+              ]}
+              typingSpeed={65}
+              pauseDuration={2000}
+              showCursor={true}
+              cursorCharacter="|"
+              className="text-white text-4xl"
+            />
             <motion.div
               initial="hidden"
               animate="visible"
